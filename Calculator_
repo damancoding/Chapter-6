@@ -1,0 +1,55 @@
+# Calculator 2/14/2024
+# Amanda M
+
+def addNum():
+    arg1 = input("Enter a number: ")
+    arg2 = input("Enter a number: ")  
+	addsum = arg1 + arg2
+	return(addsum)
+
+
+def subNum():
+    arg1 = input("Enter a number: ")
+    arg2 = input("Enter a number: ")  
+	subsum = arg1 - arg2
+	return(subsum)
+
+def mulNum():
+    arg1 = input("Enter a number: ")
+    arg2 = input("Enter a number: ")  
+	mulsum = arg1 + arg2
+	return(mulsum)
+
+def divNum():
+    arg1 = input("Enter a number: ")
+    arg2 = input("Enter a number: ")  
+	divsum = arg1 + arg2
+	return(divsum)
+
+
+# selectionN = str(input(f"Choose one operation: {subtraction}, {multiplication}, {division}."))
+
+# number1 = float(input("Enter a number: "))
+# number2 = float(input("Enter a second number: "))
+
+
+keepGoing = "y"
+
+def main():
+	selectionN = str(input(f"Choose one operation: {addition}, {subtraction}, {multiplication}, {division}."))
+
+	if selectionN is addition:
+        answer = addNum()
+    elif selectionN is subtraction:
+        answer = subsum
+    elif selectionN is 
+
+while keepGoing == "y":
+    keepGoing = input("Do you want to add using the calcUlator? Enter y for yes, n for no. ")
+    if keepGoing == "y":
+        main()
+    else:
+        print("Happy Valentine's day!")
+main()
+
+    
