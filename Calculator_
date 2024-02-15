@@ -17,13 +17,13 @@ def subNum():
 def mulNum():
     arg1 = input("Enter a number: ")
     arg2 = input("Enter a number: ")  
-	mulsum = arg1 + arg2
+	mulsum = arg1 * arg2
 	return(mulsum)
 
 def divNum():
     arg1 = input("Enter a number: ")
     arg2 = input("Enter a number: ")  
-	divsum = arg1 + arg2
+	divsum = arg1 / arg2
 	return(divsum)
 
 
