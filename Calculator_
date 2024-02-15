@@ -32,7 +32,7 @@ def divNum():
 # number1 = float(input("Enter a number: "))
 # number2 = float(input("Enter a second number: "))
 
-
+# fragment of the keepGoing loop
 keepGoing = "y"
 
 def main():
