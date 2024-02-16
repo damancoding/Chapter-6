@@ -1,55 +1,48 @@
-# Calculator 2/14/2024
-# Amanda M
+# Calculator
 
 def addNum():
-    arg1 = input("Enter a number: ")
-    arg2 = input("Enter a number: ")  
-	addsum = arg1 + arg2
-	return(addsum)
-
+    arg1 = float(input("Enter a number: "))
+    arg2 = float(input("Enter a number: "))  
+    addsum = arg1 + arg2
+    return(addsum)
 
 def subNum():
-    arg1 = input("Enter a number: ")
-    arg2 = input("Enter a number: ")  
-	subsum = arg1 - arg2
-	return(subsum)
+    arg1 = float(input("Enter a number: "))
+    arg2 = float(input("Enter a number: "))
+    subsum = arg1 - arg2
+    return(subsum)
 
 def mulNum():
-    arg1 = input("Enter a number: ")
-    arg2 = input("Enter a number: ")  
-	mulsum = arg1 * arg2
-	return(mulsum)
+    arg1 = float(input("Enter a number: "))
+    arg2 = float(input("Enter a number: "))  
+    mulsum = arg1 * arg2
+    return(mulsum)
 
 def divNum():
-    arg1 = input("Enter a number: ")
-    arg2 = input("Enter a number: ")  
-	divsum = arg1 / arg2
-	return(divsum)
-
-
-# selectionN = str(input(f"Choose one operation: {subtraction}, {multiplication}, {division}."))
-
-# number1 = float(input("Enter a number: "))
-# number2 = float(input("Enter a second number: "))
-
-# fragment of the keepGoing loop
-keepGoing = "y"
+    arg1 = float(input("Enter a number: "))
+    arg2 = float(input("Enter a number: "))  
+    divsum = arg1 / arg2
+    return(divsum)
 
 def main():
-	selectionN = str(input(f"Choose one operation: {addition}, {subtraction}, {multiplication}, {division}."))
+    selectionN = str(input(f"Choose one operation: addition, subtraction, multiplication, division. "))
 
-	if selectionN is addition:
+    if selectionN == "addition":
         answer = addNum()
-    elif selectionN is subtraction:
-        answer = subsum
-    elif selectionN is 
-
-while keepGoing == "y":
-    keepGoing = input("Do you want to add using the calcUlator? Enter y for yes, n for no. ")
-    if keepGoing == "y":
-        main()
+        print(answer)
+    elif selectionN == "subtraction":
+        answer = subNum()
+        print(answer)
+    elif selectionN == "multiplication":
+        answer = mulNum()
+        print(answer)
+    elif selectionN == "division":
+        answer = divNum()
+        print(answer)
     else:
-        print("Happy Valentine's day!")
+        print("Invalid selection.")
+        main()
 main()
+
 
     
