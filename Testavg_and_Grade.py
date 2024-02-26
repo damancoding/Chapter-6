@@ -1,16 +1,15 @@
-#  Amanda M
+# Amanda M
 # 1/31/2024
-# test 4.1 statements
+# Chapter 6 Programming Exercises
 
-keepGoing = "y"
 def main():
     test1 = float(input('Enter the score for test 1: '))
-   # test2 = float(input('Enter the score for test 2: '))
-   # test3=  float(input('Enter the score for test 3: '))
-   # test4=  float(input('Enter the score for test 4: '))
-   # test5=  float(input('Enter the score for test 5: '))
+    test2 = float(input('Enter the score for test 2: '))
+    test3=  float(input('Enter the score for test 3: '))
+    test4=  float(input('Enter the score for test 4: '))
+    test5=  float(input('Enter the score for test 5: '))
 
-    # Process for test1
+    # Determine the Grade
     if  test1 >= 90:
         print('Congratulations! You earned an A.')
     elif test1 >= 80:
@@ -24,28 +23,27 @@ def main():
     else:
         print('Invalid entry. Please input test score')
     
-    # Calling the other functions
-    # sharp()
-    
-
     # Calculating the Average
-   # def sharp():
-        # sharp = input("Continue onto the averages? Y or N")
-        # if sharp == "Y":
-            # average = (test1 + test2 + test3 + test4 + test5) / 5.0
-            # print('The average score is', average)
-        #else:
-            # quit   
+    def sharp():
+        sharp = "Y"
+        sharp = input("Continue onto the averages? Y or N ")
+        if sharp == "Y":
+            average = (test1 + test2 + test3 + test4 + test5) / 5.0
+            return(print(f"The average score is {average}."))
+        else:
+            quit
+    sharp()
 
 # Repetition Cycle 
+keepGoing = "y"            
 def loop():
+    keepGoing = "y"
     while keepGoing == "y":
-        keepGoing = input("Would you like to use the dule again? y or N")
-    if keepGoing == "y":
+        keepGoing = input("Would you like to use the dule again? y or N ")
+        if keepGoing == "y":
             main()
-    else:
+        else:
             print("Have a good day!")
-
 
 main()
 loop()
