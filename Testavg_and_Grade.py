@@ -25,20 +25,20 @@ def main():
         print('Invalid entry. Please input test score')
     
     # Calling the other functions
-    sharp()
+    # sharp()
     
 
     # Calculating the Average
-    def sharp():
-        sharp = input("Continue onto the averages? Y or N")
-        if sharp == "Y":
+   # def sharp():
+        # sharp = input("Continue onto the averages? Y or N")
+        # if sharp == "Y":
             # average = (test1 + test2 + test3 + test4 + test5) / 5.0
             # print('The average score is', average)
         #else:
-            quit   
+            # quit   
 
 # Repetition Cycle 
-def keepGoing():
+def loop():
     while keepGoing == "y":
         keepGoing = input("Would you like to use the dule again? y or N")
     if keepGoing == "y":
@@ -47,5 +47,5 @@ def keepGoing():
             print("Have a good day!")
 
 
-keepGoing()
 main()
+loop()
